@@ -1,4 +1,6 @@
-# Functional Programming with Java ![Java CI](https://github.com/christopherfriedrich/javafunctional/workflows/Java%20CI/badge.svg?branch=master)
+# Functional Programming with Java 
+
+![Java CI](https://github.com/christopherfriedrich/javafunctional/workflows/Java%20CI/badge.svg?branch=master)
 
 Comparison of imperative to functional / declarative programming in Java
 
