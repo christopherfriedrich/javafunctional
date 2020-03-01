@@ -28,8 +28,8 @@ public class _Stream {
 
     /**
      * Method to print all names of a {@link List} of {@link Person}
-     * with the Java Stream API using <i>method reference</i>
-     * Alternative: <code>name ->System.out.println(name)</code>
+     * with the Java Stream API using <i>method reference</i> <br>
+     * <b>Alternative</b>: <code>name ->System.out.println(name)</code>
      * @param people to print the names of
      */
     static void getAllNames(List<Person> people){

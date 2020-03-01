@@ -38,7 +38,7 @@ public class _Predicates {
      * @param email to be verified
      * @return if the email is valid
      */
-    static boolean isEmailValid(String email) {
+    public static boolean isEmailValid(String email) {
         return email.contains("@") && email.endsWith(".de");
     }
 
@@ -50,12 +50,12 @@ public class _Predicates {
     /**
      * Check whether an email has a valid format with an declarative approach using {@link Predicate}
      */
-    static Predicate<String> isEmailValidPredicate = email -> email.contains("@") && email.endsWith(".de");
+    public static Predicate<String> isEmailValidPredicate = email -> email.contains("@") && email.endsWith(".de");
 
     /**
      *  Check whether an email starts with a dot with an declarative approach using {@link Predicate}
      */
-    static Predicate<String> doesntStartsWithDot = email -> !email.startsWith(".");
+    public static Predicate<String> doesntStartsWithDot = email -> !email.startsWith(".");
 
     /**
      * Method to filter all {@link Person} with female gender in imperative way

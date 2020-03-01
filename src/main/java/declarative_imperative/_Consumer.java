@@ -23,7 +23,7 @@ public class _Consumer {
     /**
      * Imperative approach to take an {@link Customer} and print a sentence based on the customers parameters
      */
-    static void greetCustomer(Customer customer){
+    public static void greetCustomer(Customer customer){
         System.out.println("Hello "+customer.getName()+", thanks for registering phone number "+customer.getPhoneNumber());
     }
 
@@ -35,7 +35,7 @@ public class _Consumer {
     /**
      * Declarative approach to take an {@link Customer} and print a sentence based on the customers parameters
      */
-    static Consumer<Customer> greetCustomerConsumer = customer ->
+    public static Consumer<Customer> greetCustomerConsumer = customer ->
             System.out.println("Hello "+customer.getName()+", thanks for registering phone number "+customer.getPhoneNumber());
 
     /*------------------------------------------------------------------|
@@ -46,7 +46,7 @@ public class _Consumer {
      * Declarative approach to take an {@link Customer} and print a sentence based on the customers parameters but
      * only print the Phone Number when the second input parameter is true.
      */
-    static BiConsumer<Customer, Boolean> greetCustomerOptinalPhoneNumberConsumer = (customer, showPhoneNumber) ->
+    public static BiConsumer<Customer, Boolean> greetCustomerOptinalPhoneNumberConsumer = (customer, showPhoneNumber) ->
             System.out.println("Hello "+customer.getName()+", thanks for registering phone number "+(showPhoneNumber ? customer.getPhoneNumber() : "******"));
 
 

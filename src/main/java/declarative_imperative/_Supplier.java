@@ -23,14 +23,14 @@ public class _Supplier {
      * Method to get an API URL using an imperative approach
      * @return the API URL
      */
-    static String getAPIUrl(){
+    public static String getAPIUrl(){
         return API_URL;
     }
 
     /**
      * Declarative approach to get the API Url using a {@link Supplier}
      */
-    static Supplier<String> getAPIUrlSupplier = () -> API_URL;
+    public static Supplier<String> getAPIUrlSupplier = () -> API_URL;
 
     /*------------------------------------------|
      | Suppliers can return any type / object   |
@@ -40,7 +40,7 @@ public class _Supplier {
      * Declarative approach to get a {@link List} of greetings in different languages
      * using a {@link Supplier}
      */
-    static Supplier<List<String>> greetingsSupplier = () -> List.of(
+    public static Supplier<List<String>> greetingsSupplier = () -> List.of(
       "Hello", "Hallo", "Bonjour"
     );
 }
