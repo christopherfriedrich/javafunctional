@@ -10,6 +10,18 @@ import java.util.function.Function;
  */
 public class _Functions {
 
+    public static void main(String[] args) {
+        // Incremention Method (imperative)
+        int incremented_imperative = incrementByOne(0);
+        System.out.println(incremented_imperative);
+        // Incremention Function (declarative)
+        int incremented_declarative = incrementByOneFunction.apply(0);
+        System.out.println(incremented_declarative);
+        // Function Chaining vs. BiFunction
+        System.out.println(incrementBy1AndMultiplyBy5.apply(1));
+        System.out.println(incrementByOneAndMultiply.apply(1,5));
+    }
+
     /**
      * Imperative method to increment a number by 1
      * @param number to be increased
